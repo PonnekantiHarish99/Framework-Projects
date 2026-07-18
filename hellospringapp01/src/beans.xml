@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<beans> xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="st" class="hellospringapp01.Student">
+        <property name="sid" value="102"/>
+        <property name="sname" value="harish"/>
+        <property name="age" value="22"/>
+    </bean>
+
+</beans>
