@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Setter Injection -->
+    <bean id="lp" class="com.vcube.hellospringapp03.Laptop">
+        <property name="model" value="intel-core"/>
+        <property name="brand" value="Dell"/>
+        <property name="price" value="30000"/>
+    </bean>
+
+    <!-- Constructor Injection -->
+    <bean id="lp1" class="com.vcube.hellospringapp03.Laptop">
+        <constructor-arg name="model" value="intel-core2"/>
+        <constructor-arg name="brand" value="Lenovo"/>
+        <constructor-arg name="price" value="20000"/>
+    </bean>
+
+</beans>
