@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="add" class="com.vcube.hellospringapp04.Address">
+
+	</bean>
+	<bean id="st" class="com.vcube.hellospringapp04.Student">
+		<property name="address" ref="add" />
+	</bean>
+
+
+	<bean id="st1" class="com.vcube.hellospringapp04.Student1">
+		<constructor-arg ref="add" />
+	</bean>
+</beans>
